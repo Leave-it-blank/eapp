@@ -1,7 +1,7 @@
  
 # eWaste Web App
 
-![eWaste Web App](app-screenshot.png)
+![eWaste Web App](public/Landing_Page/)
 
 Welcome to the eWaste Web App! This application is built with Laravel, Tailwind CSS, and MySQL, allowing users to schedule their e-waste pick-up and connecting them with vendors who can collect the e-waste from their specified address.
 
@@ -21,7 +21,7 @@ To get started with the eWaste Web App, follow these steps:
 
 1. Clone the repository:
 
-```git clone https://github.com/your-username/ewaste-webapp.git```
+```git clone https://github.com/Leave-it-blank/eapp.git```
 
 2. Navigate to the project directory:
 
