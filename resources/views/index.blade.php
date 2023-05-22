@@ -11,23 +11,24 @@
                     </div>
                     <div class="flex hidden flex-row items-center self-center w-[350px] md:flex">
                         <div class="flex w-full flex-col items-center justify-center gap-1">
-                            <a class="font-bold"><span>Home</span></a>
+                            <a href="#" class="font-bold"><span>Home</span></a>
                             <div class="border-b-4 border-lime-500 w-[42px]">
                             </div>
                         </div>
                         <div class="flex w-full flex-col items-center justify-center gap-1">
-                            <a class="font-bold"> <span> About us </span></a>
-                            <div class="border-lime-500 w-[42px] 4">
+                            <div class="hover:border-b-4  border-lime-500  "> <a href="#about" class="font-bold"> <span> About us </span></a>
+
                             </div>
                         </div>
                         <div class="flex w-full flex-col items-center justify-center gap-1">
-                            <a class="font-bold"> <span> Services</span></a>
-                            <div class="border-lime-500 w-[42px]">
+                            <div class="hover:border-b-4  border-lime-500  "> <a href="#services" class="font-bold"> <span> Services</span></a>
+
                             </div>
                         </div>
                         <div class="flex w-full flex-col items-center justify-center gap-1">
-                            <a class="font-bold"><span> Contact us </span></a>
-                            <div class="border-lime-500 w-[42px]">
+                            <div class="hover:border-b-4  border-lime-500  ">
+                                <a href="#contact"  class="font-bold "> Contact us </a>
+
                             </div>
                         </div>
 
@@ -151,7 +152,7 @@
 
             </div>
         </section>
-        <section class="bg-lime-50 bg-opacity-30">
+        <section class="bg-lime-50 bg-opacity-30" id="about">
             <div class="flex w-full flex-col items-center justify-center gap-3 pt-20">
                 <h1 class="px-5 text-4xl font-bold md:text-5xl">
                     About Us
@@ -179,7 +180,7 @@
             </div>
         </section>
 
-        <section class="bg-lime-50 bg-opacity-30" >
+        <section class="bg-lime-50 bg-opacity-30" id="services" >
             <div class="flex w-full flex-col items-center justify-center gap-3 pt-20" >
                 <h1 class="px-5 text-4xl font-bold md:text-5xl">
                     Our Services
@@ -242,7 +243,7 @@
             </div>
         </section>
 
-        <section class="bg-lime-50 bg-opacity-30">
+        <section class="bg-lime-50 bg-opacity-30" id="process">
             <div class="flex w-full flex-col items-center justify-center gap-3 pt-10">
                 <h1 class="px-5 text-4xl font-bold capitalize md:text-5xl">
                     Our E-waste management proccess
@@ -312,7 +313,7 @@
 
             </div>
         </section>
-        <section class="bg-lime-50 bg-opacity-30 pb-20">
+        <section class="bg-lime-50 bg-opacity-30 pb-20" id="hub">
             <div class="flex w-full flex-col items-center justify-center gap-3 pt-10">
                 <h1 class="px-5 text-4xl font-bold capitalize md:text-5xl">
                     Our Exclusive Hubse
@@ -368,7 +369,7 @@
             </div>
         </section>
         <section>
-            <div class="relative h-full">
+            <div class="relative h-full"  id="contact">
 
                 <div class="relative h-64">
                     <div class="absolute inset-0 h-full bg-cover bg-center"
@@ -384,10 +385,10 @@
                                 <span
                                     style="  font-style: normal;font-weight: 700; display: flex;align-items: center; color: #FFFFFF; ">Request now</span>
                             </div>
-                            <button class="px-2 py-1 py-2 text-sm sm:px-4 sm:text-xl md:text-2xl"
+                            <a href="{{route('eWasteForm')}}">  <button class="px-2 py-1 py-2 text-sm sm:px-4 sm:text-xl md:text-2xl"
                                     style="background: linear-gradient(198.89deg, #6ACB7A 5.79%, #5EB797 93.04%); border-radius: 5px;">
                                 Schedule Pickup
-                            </button>
+                                </button> </a>
                         </div>
                         <img class="w-20" src="Landing_Page/arrow.svg" alt="svg">
 
