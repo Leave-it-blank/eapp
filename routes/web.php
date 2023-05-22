@@ -16,9 +16,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('index');
 });
-Route::get('/welcome', function () {
-    return view('welcome');
-});
+
 Route::middleware([
     'auth:sanctum',
     config('jetstream.auth_session'),
@@ -28,3 +26,12 @@ Route::middleware([
         return view('dashboard');
     })->name('dashboard');
 });
+Route::group(
+    ['middleware' => ['auth']] , function () {
+    Route::get('/schedule/create', [\App\Http\Controllers\OrdersController::class, 'createOrder' ])->name('eWasteForm');
+    Route::get('/schedule/{id}/fill', \App\Http\Livewire\Backend\Form\FillDetails::class)->name('eWasteForm_phase_two');
+    Route::get('/schedule/{id}/success', \App\Http\Livewire\Backend\Form\Successful::class)->name('eWasteForm_phase_three');
+    Route::get('/address/create',  \App\Http\Livewire\Backend\Address\Create::class)->name('address.create');
+    Route::get('/address/{id}/edit',  \App\Http\Livewire\Backend\Address\Edit::class)->name('address.edit');
+    Route::get('/orders',  \App\Http\Livewire\Backend\History\TrackOrders\Index::class)->name('orders.list');
+    });
