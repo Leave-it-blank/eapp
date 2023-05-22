@@ -61,16 +61,9 @@ arduino
 
 9. Visit `http://localhost:8000` in your web browser to access the eWaste Web App.
 
-## Screenshots
+## Figma
 
-### User Dashboard
-![User Dashboard](screenshots/user-dashboard.png)
-
-### Schedule Pick-up
-![Schedule Pick-up](screenshots/schedule-pickup.png)
-
-### Vendor Dashboard
-![Vendor Dashboard](screenshots/vendor-dashboard.png)
+https://www.figma.com/file/eEK5UOHwcI4WFfQ9OqcL1I/E-Waste-Solutions-Website 
 
 ## Customization
 
