@@ -1,7 +1,7 @@
  
 # eWaste Web App
 
-![eWaste Web App](public/Landing_Page/)
+![eWaste Web App](public/Landing_Page/images/Logo.png)
 
 Welcome to the eWaste Web App! This application is built with Laravel, Tailwind CSS, and MySQL, allowing users to schedule their e-waste pick-up and connecting them with vendors who can collect the e-waste from their specified address.
 
